@@ -5,9 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Big Z Vending</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Big Z Vending provides fun, modern vending machines with reliable service for hotels, offices, condos, gyms and more.">
 </head>
 <body>
-  <h1>Big Z Vending</h1>
-  <p>Your vending website is working!</p>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo-wrap">
+        <img src="img/logo.png" alt="Big Z Vending logo" class="logo">
+        <span class="brand-name">Big Z Vending</span>
+      </div>
+      <a href="#contact" class="btn btn-outline">Get a Machine</a>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Fun, Reliable Vending for Your Space</h1>
+        <p>
+          Big Z Vending brings colourful, modern machines packed with crowd-favourite
+          snacks and drinks — with zero hassle for your business.
+        </p>
+        <a href="#contact" class="btn btn-primary">Request a Machine</a>
+        <p class="hero-sub">
+          No setup cost • Full service • Happy customers
+        </p>
+      </div>
+      <div class="hero-card">
+        <h2>Perfect for</h2>
+        <ul>
+          <li>🏨 Hotels & motels</li>
+          <li>🏢 Offices & co-working spaces</li>
+          <li>🏋️‍♂️ Gyms & recreation centres</li>
+          <li>🏘️ Condos & student housing</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-inner">
+        <h2>Why Big Z Vending?</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Zero Cost to You</h3>
+            <p>
+              We install, stock, and service the machines. Your guests and
+              staff get 24/7 snacks and drinks — you pay nothing.
+            </p>
+
+            <h3>Fun Branding, Serious Reliability</h3>
+            <p>
+              Our machines look fun and friendly, but we take uptime and
+              service seriously. Regular restocks, fast maintenance, and
+              card/contactless payments.
+            </p>
+          </div>
+          <div>
+            <h3>Customized for Your Location</h3>
+            <p>
+              We tailor the product mix to your crowd: healthier options,
+              late-night snacks, energy drinks, or classic favourites — you
+              choose what fits.
+            </p>
+
+            <h3>Happy Guests, Extra Convenience</h3>
+            <p>
+              A good vending setup keeps guests on-site, boosts satisfaction,
+              and reduces “Do you sell snacks?” questions for your staff.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+      <div class="section-inner">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Quick Chat</h3>
+            <p>
+              Tell us about your location, foot traffic, and what your guests
+              like. We’ll recommend the best machine setup.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Install & Stock</h3>
+            <p>
+              We deliver and install the machine, set up payment options, and
+              fully stock it with an agreed mix of products.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Full Service</h3>
+            <p>
+              We monitor usage, restock regularly, and handle maintenance. You
+              enjoy a fully managed vending solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-inner contact">
+        <h2>Get a Big Z Machine at Your Location</h2>
+        <p class="contact-intro">
+          Interested in placing a machine at your hotel, office, or building?
+          Reach out and we’ll get back to you within 1–2 business days.
+        </p>
+
+        <div class="contact-grid">
+          <div>
+            <h3>Contact Details</h3>
+            <p><strong>Email:</strong> <a href="mailto:info@bigzvending.com">info@bigzvending.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/BIGZVENDING" target="_blank">@BIGZVENDING</a></p>
+            <p class="small">
+              (Edit this section with your real email, phone, and social links.)
+            </p>
+          </div>
+
+          <div>
+            <h3>Quick Inquiry Form</h3>
+            <form action="mailto:info@bigzvending.com" method="post" enctype="text/plain">
+              <label>
+                Your Name
+                <input type="text" name="Name" required>
+              </label>
+              <label>
+                Business / Property Name
+                <input type="text" name="Business">
+              </label>
+              <label>
+                Email
+                <input type="email" name="Email" required>
+              </label>
+              <label>
+                Tell us about your location
+                <textarea name="Message" rows="4" placeholder="Hotel, office, condo, gym, approx. foot traffic, etc."></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+              <p class="tiny">
+                Submits via your email app. For a fully hosted form, you can later
+                connect a free service like Netlify Forms or Formspree.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Big Z Vending. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
